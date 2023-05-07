@@ -1,10 +1,28 @@
 ---
-layout: Hello
-title:  "About Me"
-date:   2023-05-08
+layout: post
+title:  "Integrating razorpay into your webapp"
+date:   2019-03-23 21:03:36 +0530
+categories: Javascript NodeJS
 ---
-![welcome](https://user-images.githubusercontent.com/95120269/236700692-7a7168eb-e0f1-4ffb-954c-913fb70ee965.jpg)
-안녕하세요, 이 페이지에 방문해 주셔서 감사합니다:)<br/>
-이 페이지는 작성자의 자기소개를 위해 개발되었습니다.<br/>
-저는 단국대학교에 3학년으로 재학중인 소프트웨어학과 32211334학번 김환희입니다:D<br/>
-취미는 그림그리기이며, 최근 관심사는 자격증 공부입니다.<br/>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+
+```javascript
+const Razorpay = require('razorpay');
+
+let rzp = Razorpay({
+	key_id: 'KEY_ID',
+	secret: 'name'
+});
+
+// capture request
+rzp.capture(payment_id, cost)
+	.then(function (data) {
+		return 2;
+	})
+```
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
